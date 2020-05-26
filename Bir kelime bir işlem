@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int main(){
+	
+	int ilkdizi[]={1,2,3,4,5,6,7,8,9};
+	int ikincidizi[]={25,50,75,60};
+    int ilkkume[5];
+    int ikincikume;
+	
+	srand(time(NULL)); 
+	 
+    int b;
+    for(b=0;b<5;b++){
+    	
+    	int i=1+rand()%8;
+    	ilkkume[b]=i;
+    		}
+    		
+	printf("Kullanabileceginiz Sayilar\n");
+	
+	int a;
+	for(a=0;a<5;a++){
+		printf("%d ",ilkkume[a]);
+	}
+	
+   int f=rand()%3;
+   
+   ikincikume=ikincidizi[f];
+    
+	
+	printf("ve %d",ikincikume);
+	
+	return 0;
+}
+
+
